@@ -14,6 +14,16 @@
       "content": "PUT needs all the data in json-server",
       "votes": 3,
       "id": "4QL-R4R"
+    },
+    {
+      "content": "Does it really need async",
+      "votes": 0,
+      "id": "QJgTyln"
+    },
+    {
+      "content": "Testing the timer",
+      "votes": 2,
+      "id": "PF8ZFUE"
     }
   ]
 }
