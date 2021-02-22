@@ -1,4 +1,4 @@
-const defaultNotification = 'Things are working as intended'
+const defaultNotification = ''
 
 const reducer = (state = defaultNotification, action) => {
   switch (action.type) {
