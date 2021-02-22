@@ -26,8 +26,7 @@ const reducer = (state = initialState, action) => {
       return sortAnecdotes(updatedAnecdotes)
     }
     case 'ADD': {
-      const newAnecdote = asObject(action.data.anecdote)
-      const updatedAnecdotes = state.concat(newAnecdote)
+      const updatedAnecdotes = state.concat(action.anecdote)
       return sortAnecdotes(updatedAnecdotes)
     }
     case 'INIT': {
@@ -49,9 +48,7 @@ export const voteAnecdote = (id) => {
 export const addAnecdote = (anecdote) => {
   return {
     type: 'ADD',
-    data: {
-      anecdote
-    }
+    anecdote
   }
 }
 
