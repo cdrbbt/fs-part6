@@ -25,9 +25,9 @@ const AnecdoteList = () => {
   })
   const dispatch = useDispatch()
 
-  const vote = (id) => {
-    console.log('vote', id)
-    dispatch(voteAnecdote(id))
+  const vote = (anecdote) => {
+    console.log('vote', anecdote)
+    dispatch(voteAnecdote(anecdote))
     dispatch(changeNotification('Vote accepted'))
     setTimeout(() => dispatch(resetNotification()), 5000)
   }
@@ -38,7 +38,7 @@ const AnecdoteList = () => {
       <Filter />
       {anecdotes.map(anecdote =>
         <div key={anecdote.id}>
-         <Anecdote anecdote={anecdote} handleClick={() => vote(anecdote.id)}/>
+         <Anecdote anecdote={anecdote} handleClick={() => vote(anecdote)}/>
         </div>
       )}
     </div>

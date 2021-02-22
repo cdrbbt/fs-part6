@@ -1,0 +1,7 @@
+//need full object for put to work properly
+PUT http://localhost:3001/anecdotes/69581
+Content-Type: application/json
+
+{
+  "votes": 5
+}
