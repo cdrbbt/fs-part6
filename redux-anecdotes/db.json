@@ -8,16 +8,16 @@
     {
       "content": "Adding manpower to a late software project makes it later!",
       "id": "21149",
-      "votes": 33
+      "votes": 64
     },
     {
       "content": "PUT needs all the data in json-server",
-      "votes": 4,
+      "votes": 19,
       "id": "4QL-R4R"
     },
     {
       "content": "Does it really need async",
-      "votes": 0,
+      "votes": 19,
       "id": "QJgTyln"
     },
     {
@@ -27,8 +27,13 @@
     },
     {
       "content": "Test connect",
-      "votes": 1,
+      "votes": 4,
       "id": "g-RGL51"
+    },
+    {
+      "content": "Testing",
+      "votes": 1,
+      "id": "O68OEr2"
     }
   ]
 }

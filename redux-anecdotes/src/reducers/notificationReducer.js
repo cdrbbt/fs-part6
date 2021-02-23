@@ -9,13 +9,16 @@ const reducer = (state = defaultNotification, action) => {
 }
 
 
+let currentTimeout = null
+
 export const changeNotification = (text, seconds) => {
   return dispatch => {
     dispatch({
       type: 'NOTIFY',
       text
     })
-    setTimeout(() => (dispatch(resetNotification())), seconds*1000 )
+    clearTimeout(currentTimeout)
+    currentTimeout = setTimeout(() => (dispatch(resetNotification())), seconds*1000 )
   }
 }
 
